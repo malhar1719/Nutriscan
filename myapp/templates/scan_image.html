@@ -1,0 +1,12 @@
+<!-- image_scanner/templates/scan_image.html -->
+<html>
+<head><title>Upload Image</title></head>
+<body>
+    <h2>Upload Image</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
